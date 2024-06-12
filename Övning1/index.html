@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <button class="toggle"></button>
+      <nav>
+        <ol>
+          <li id="item-one">
+            <h3>Home</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </li>
+          <li id="item-two">
+            <h3>What we do</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+              porro non doloremque eaque aliquid minus?
+            </p>
+          </li>
+          <li id="item-three">
+            <h3>Who we are</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              quas ratione eos quam eum quibusdam cum.
+            </p>
+          </li>
+          <li id="item-four">
+            <h3>Contact</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique cum aliquid delectus nobis fugiat.
+            </p>
+          </li>
+        </ol>
+      </nav>
+      <section>
+        <div>
+          <h1>Hello there</h1>
+          <p>Toggle the red button in the upper left corner</p>
+        </div>
+      </section>
+    </main>
+    <script>
+      /* document.querySelector("nav").addEventListener("click", (e) => {
+        e.target.classList.toggle("open");
+      }); */
+      document.querySelector(".toggle").addEventListener("click", (e) => {
+        document.querySelector("nav").classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
