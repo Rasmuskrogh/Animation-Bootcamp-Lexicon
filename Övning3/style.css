@@ -6,4 +6,68 @@
 body {
   background-color: #eee;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  position: relative;
+}
+
+.cube {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  position: absolute;
+  animation: cubemoves 6s infinite linear;
+}
+
+@keyframes cubemoves {
+  0% {
+    background-color: green;
+    transform: translateX(0) translateY(0);
+  }
+  20% {
+    background-color: green;
+    transform: translateX(0) translateY(450px);
+  }
+
+  25% {
+    background-color: red;
+    transform: translateX(0) translateY(450px);
+  }
+
+  45% {
+    background-color: red;
+    transform: translateX(450px) translateY(450px);
+  }
+
+  50% {
+    background-color: blue;
+    transform: translateX(450px) translateY(450px);
+  }
+
+  70% {
+    background-color: blue;
+    transform: translateX(450px) translateY(0);
+  }
+
+  75% {
+    background-color: yellow;
+    transform: translateX(450px) translateY(0);
+  }
+
+  95% {
+    background-color: yellow;
+    transform: translateX(0) translateY(0);
+  }
+
+  100% {
+    background-color: green;
+    transform: translateX(0) translateY(0);
+  }
 }
